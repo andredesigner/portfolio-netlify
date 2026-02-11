@@ -8,5 +8,4 @@ export default defineNuxtConfig({
       link: [{ rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
     },
   },
-  modules: ['@nuxtjs/netlify']
 })
