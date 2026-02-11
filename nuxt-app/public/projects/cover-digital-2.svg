@@ -1,0 +1,10 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#0E0B0F"/>
+  <rect x="100" y="140" width="1000" height="520" rx="24" fill="#242124"/>
+  <text x="140" y="220" fill="#FFB607" font-family="Manrope, Arial, sans-serif" font-size="42" font-weight="600">
+    Digital Flow
+  </text>
+  <text x="140" y="280" fill="#FFFFFF" font-family="Manrope, Arial, sans-serif" font-size="22">
+    Placeholder
+  </text>
+</svg>
