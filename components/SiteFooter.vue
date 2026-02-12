@@ -1,21 +1,28 @@
 <template>
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <BrandMark class="brand-icon brand-icon--footer" role="img" aria-label="André Oliveira" />
+    <div class="container site-footer__content">
+      <div class="site-footer__top">
+        <div class="site-footer__brand">
+          <BrandMark class="brand-icon brand-icon--footer" role="img" aria-label="André Oliveira" />
+        </div>
+
+        <nav class="site-footer__links" aria-label="Redes sociais">
+          <a href="https://dribbble.com/andreoliveiradesigner" target="_blank" rel="noreferrer">Dribbble</a>
+          <a href="https://www.instagram.com/andreoliveira.des.br" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="mailto:andreoliveiradesigner@gmail.com">E-mail</a>
+        </nav>
       </div>
-      <div class="footer-links">
-        <a href="https://dribbble.com/andreoliveiradesigner" target="_blank" rel="noreferrer">Dribbble</a>
-        <a href="https://www.instagram.com/andreoliveira.des.br" target="_blank" rel="noreferrer">Instagram</a>
-        <a href="mailto:andreoliveiradesigner@gmail.com">E-mail</a>
+
+      <div class="site-footer__bottom">
+        <div class="site-footer__meta">
+          <p>Produtos são feitos por pessoas, para pessoas.</p>
+          <p>© andré oliveira 2026</p>
+        </div>
+
+        <div class="site-footer__skyline" aria-hidden="true">
+          <FooterSkyline class="site-footer__skyline-svg" />
+        </div>
       </div>
-      <div class="footer-meta">
-        <p>Produtos são feitos por pessoas, para pessoas.</p>
-        <p>© andré oliveira 2026</p>
-      </div>
-    </div>
-    <div class="footer-skyline" aria-hidden="true">
-      <FooterSkyline class="footer-skyline-svg" />
     </div>
   </footer>
 </template>
@@ -27,89 +34,114 @@ import FooterSkyline from '~/components/FooterSkyline.vue'
 
 <style scoped>
 .site-footer {
-  min-height: 101vh;
+  min-height: 816px;
   padding-top: 128px;
-  position: relative;
-  overflow: hidden;
-  align-content: end;
+  padding-bottom: 0;
 }
 
-
-.footer-inner {
+.site-footer__content {
   display: flex;
   flex-direction: column;
-  gap: 64px;
-  align-items: center;
-  text-align: center;
+  gap: 128px;
 }
 
-.footer-links {
+.site-footer__top {
   display: flex;
-  gap: 16px;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+}
+
+.site-footer__brand {
+  display: flex;
+  justify-content: center;
+}
+
+.site-footer__links {
+  display: flex;
+  gap: 24px;
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.52;
+  line-height: 32px;
 }
 
-.footer-links a {
+.site-footer__links a {
   text-decoration: none;
+  border-bottom: 1px solid #0e0b0f;
+  padding-bottom: 16px;
 }
 
-.footer-meta {
+.site-footer__bottom {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  font-size: 16px;
-  line-height: 1.52;
-  font-weight: 400;
+  align-items: center;
+  gap: 128px;
 }
 
-.footer-meta p {
-  margin: 0;
-}
-
-.footer-skyline {
+.site-footer__meta {
   display: flex;
-  gap: 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.site-footer__meta p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+
+.site-footer__skyline {
   width: 100%;
-  padding-top: 128px;
+  display: flex;
   justify-content: center;
 }
 
 .brand-icon--footer {
-  width: 112px;
-  height: 260px;
+  width: 182px;
+  height: 256px;
   color: #ffb607;
 }
 
-.footer-skyline-svg {
-  width: 100%;
+.site-footer__skyline-svg {
+  width: 592px;
   height: auto;
   display: block;
-  flex-shrink: 0;
-}
-
-.footer-skyline-svg--short {
-  width: 208px;
 }
 
 @media (max-width: 899px) {
-  .footer-skyline {
-    display: block;
+  .site-footer {
+    min-height: 0;
   }
 
-  .footer-skyline > :not(:first-child) {
-    display: none;
+  .site-footer__content {
+    gap: 96px;
   }
-}
 
-@media (min-width: 900px) {
+  .site-footer__links {
+    gap: 12px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .site-footer__links a {
+    padding-bottom: 8px;
+  }
+
+  .site-footer__bottom {
+    gap: 96px;
+  }
+
   .brand-icon--footer {
-    width: 186px;
+    width: 140px;
+    height: 197px;
   }
 
-  .footer-skyline-svg {
-    width: 592px;
+  .site-footer__skyline-svg {
+    width: 100%;
   }
 }
 </style>
