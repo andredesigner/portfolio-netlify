@@ -80,7 +80,7 @@ defineProps<{
 @media (min-width: 900px) {
   .home-projects__title-wrap {
     position: sticky;
-    top: 64px;
+    top: 128px;
     align-self: start;
   }
 }

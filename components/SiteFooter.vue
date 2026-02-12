@@ -90,7 +90,7 @@ import FooterSkyline from '~/components/FooterSkyline.vue'
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.2px;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 8px;
 }
 

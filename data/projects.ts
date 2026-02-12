@@ -266,4 +266,64 @@ export const projects: Project[] = [
       },
     ],
   },
+  {
+    slug: 'aurora-cafe-identidade',
+    title: 'Identidade visual Aurora Café',
+    type: 'branding',
+    layout: 'A',
+    year: '2023',
+    role: ['Branding', 'Identidade Visual'],
+    coverImage: {
+      src: '/projects/cover-branding.svg',
+      alt: 'Identidade visual da Aurora Café',
+    },
+    tags: ['Branding', 'Identidade Visual'],
+    summary:
+      'Sistema visual para cafeteria autoral com foco em presença de marca, consistência e aplicação digital.',
+    sections: [
+      {
+        type: 'text',
+        title: 'Direção',
+        body:
+          'Desenvolvemos uma identidade com tipografia marcante, paleta terrosa e grafismos modulares para garantir reconhecimento em diferentes pontos de contato.',
+      },
+      {
+        type: 'gallery',
+        images: [
+          { src: '/projects/cover-branding.svg', alt: 'Aplicação da marca Aurora Café' },
+          { src: '/projects/cover-branding.svg', alt: 'Desdobramentos visuais da Aurora Café' },
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'novo-norte-identidade',
+    title: 'Identidade visual Novo Norte',
+    type: 'branding',
+    layout: 'A',
+    year: '2021',
+    role: ['Branding', 'Direção de Arte'],
+    coverImage: {
+      src: '/projects/cover-branding.svg',
+      alt: 'Identidade visual da Novo Norte',
+    },
+    tags: ['Branding', 'Direção de Arte'],
+    summary:
+      'Construção de marca para negócio de serviços com foco em clareza de posicionamento e coerência visual.',
+    sections: [
+      {
+        type: 'text',
+        title: 'Direção',
+        body:
+          'Criamos um sistema de identidade baseado em contraste tipográfico e elementos gráficos simples, facilitando expansão para digital e materiais institucionais.',
+      },
+      {
+        type: 'gallery',
+        images: [
+          { src: '/projects/cover-branding.svg', alt: 'Aplicações da marca Novo Norte' },
+          { src: '/projects/cover-branding.svg', alt: 'Variações da identidade Novo Norte' },
+        ],
+      },
+    ],
+  },
 ]
